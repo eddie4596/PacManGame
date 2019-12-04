@@ -1,4 +1,4 @@
-PacMan Requirements List(version 1)
+PacMan Requirements List(version 2)
 1) Two players to be able to play simultaneously.
 2) Have a maze like map.
 3) Enemies are ghost's that "chase" the two players. 
@@ -9,3 +9,8 @@ PacMan Requirements List(version 1)
    Players get points for eating ghosts.
 6) At the end of the game, players scores are shown, individually, then added up.
    Players get points for getting pellets and eating ghosts.
+7) Players should not collide with each other, they should just go through each other.
+8) Players are a bit faster than the ghosts. 
+9) Ghosts are in a box in the middle of the maze with one ghost starting at the beginning.
+   Periodically ghosts are let out.
+10)If a ghost is eaten, the ghost is put back into the box and waits until he is released.
