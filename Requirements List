@@ -1,0 +1,11 @@
+PacMan Requirements List
+1) Two players to be able to play simultaneously.
+2) Have a maze like map.
+3) Enemies are ghost's that "chase" the two players. 
+   If a ghosts catches a player, that player loses.
+4) Players will collect "pellets" along the map. 
+   Players win when they collect all pellets along the map.
+5) Special pellets that lets player momentarily eat the ghosts. 
+   Players get points for eating ghosts.
+6) At the end of the game, players scores are shown, individually, then added up.
+   Players get points for getting pellets and eating ghosts.
