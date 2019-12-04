@@ -1,1 +1,40 @@
-Use Cases(Version 1)
+Use Cases(Version 2)
+
+Player eats a ghost
+1) Player picks up special pellet.
+2) all ghosts on map not in the box turn a specific color.
+3) Ghosts run away from player.
+4) Player catches a ghost.
+5) Ghost disappears from maze
+6) Ghost reappears in the box
+7) A predetermined amount of points are added to players score.
+
+Choosing two player mode
+1) Player boots up game.
+2) Title screen pops up and asks if player would like to play one player or two player.
+3) Player clicks on two player.
+4) A screen showing the controls for two player appears.
+5) Player clicks okay.
+6) Game begins.
+
+Choosing one player mode
+1) Player boots up game.
+2) Title screen pops up and asks if player would like to play one player or two player.
+3) Player clicks on one player.
+4) A screen showing the controls for one player appears.
+5) Player clicks okay.
+6) Game begins.
+
+Player wins the game(One Player)
+1) Player collects the last pellet.
+2) Screen freezes for a second.
+3) A congratulatory screen appears and shows the players score.
+4) Two buttons pop up at the bottom asking if player would like to go to the main menu or play again.
+5) Player chooses to go back to main menu
+
+Players wins the game(Two Player)
+1) A Player collects the last pellet.
+2) Screen freezes for a second.
+3) A congratulatory screen appears and shows the individual players score and the combined score.
+4) Two buttons pop up at the bottom asking if player would like to go to the main menu or play again.
+5) A Player chooses to go back to main menu
