@@ -30,11 +30,19 @@ Player wins the game(One Player)
 2) Screen freezes for a second.
 3) A congratulatory screen appears and shows the players score.
 4) Two buttons pop up at the bottom asking if player would like to go to the main menu or play again.
-5) Player chooses to go back to main menu
+5) Player chooses to go back to main menu.
 
 Players wins the game(Two Player)
 1) A Player collects the last pellet.
 2) Screen freezes for a second.
 3) A congratulatory screen appears and shows the individual players score and the combined score.
 4) Two buttons pop up at the bottom asking if player would like to go to the main menu or play again.
-5) A Player chooses to go back to main menu
+5) A Player chooses to go back to main menu.
+
+Player plays the game
+1) See use case:"Choosing one player mode" or "Choosing two player mode"
+2) Player(s) starts out towards the bottom of the maze map.
+3) Ghosts are in a box in the middle of the map. One ghost starts outside the box.
+4) Player(s) move up,down,left, or right.
+5) Player collects pellet.
+6) A predetermined amount of points are added to players score.
