@@ -1,5 +1,5 @@
 PacMan Requirements List(version 2)
-1) Two players to be able to play simultaneously.
+1) One player or two player option. If two players, two players to be able to play simultaneously.
 2) Have a maze like map.
 3) Enemies are ghost's that "chase" the two players. 
    If a ghosts catches a player, that player loses.
@@ -14,3 +14,4 @@ PacMan Requirements List(version 2)
 9) Ghosts are in a box in the middle of the maze with one ghost starting at the beginning.
    Periodically ghosts are let out.
 10)If a ghost is eaten, the ghost is put back into the box and waits until he is released.
+11) The lanes in the map should only be big enough for one entity(player or ghost).

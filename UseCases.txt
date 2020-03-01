@@ -1,18 +1,28 @@
 Use Cases(Version 2)
 
+Possible use case: Player getting points? This defines a clear goal of getting points which is of value. However being there are may be many ways to get points, should this be a use case? also notice Player eats a ghost, step 7 adds points to a players score but the use case is about a player eating a ghost so the use case is accomplishing two things, eating a ghost and adding points to the players score. A use case should have ONE predefined goal so we should see if thats a good use case.
+
 Player eats a ghost
 1) Player picks up special pellet.
-2) all ghosts on map not in the box turn a specific color.
-3) Ghosts run away from player.
-4) Player catches a ghost.
-5) Ghost disappears from maze
-6) Ghost reappears in the box
-7) A predetermined amount of points are added to players score.
+2) all ghosts on map not in the box turn a <some specific color>.
+3) Timer starts for the predetermined amount of time ghost are vulnerable
+4) Ghosts run away from player.
+5) Player catches a ghost.
+	5.1) Player doesn't catch ghost within time limit.
+	5.2) Ghosts return to normal
+	5.3) Game resumes as normal.
+6) Ghost disappears from maze
+7) Ghost reappears in the box
+8) A predetermined amount of points are added to players score.
+9) Repeat steps 4-8.
+10) After timer runs out, game resumes as normal. 
 
 Choosing two player mode
 1) Player boots up game.
 2) Title screen pops up and asks if player would like to play one player or two player.
 3) Player clicks on two player.
+	3.1) Player clicks on one player.
+	3.2) See use case "Choosing one player mode" step 4. Continue that use case.
 4) A screen showing the controls for two player appears.
 5) Player clicks okay.
 6) Game begins.
@@ -21,6 +31,8 @@ Choosing one player mode
 1) Player boots up game.
 2) Title screen pops up and asks if player would like to play one player or two player.
 3) Player clicks on one player.
+	3.1) Player clicks on two player.
+	3.2) See use case "Choosing two player mode" step 4. Continue that use case.
 4) A screen showing the controls for one player appears.
 5) Player clicks okay.
 6) Game begins.
@@ -31,18 +43,29 @@ Player wins the game(One Player)
 3) A congratulatory screen appears and shows the players score.
 4) Two buttons pop up at the bottom asking if player would like to go to the main menu or play again.
 5) Player chooses to go back to main menu.
+	5.1) Player choose to play agin. 
+	5.2) See use case "Player plays the game" step 2. Continue that use case.
 
-Players wins the game(Two Player)
+Players wins the game(Two Player)(In this particular case, I think its better if only player one gets to choose the menu options so two people can't press separate buttons. This is how many 2 player games where back in the day anyways)
 1) A Player collects the last pellet.
 2) Screen freezes for a second.
 3) A congratulatory screen appears and shows the individual players score and the combined score.
 4) Two buttons pop up at the bottom asking if player would like to go to the main menu or play again.
-5) A Player chooses to go back to main menu.
+5) Player one chooses to go back to main menu.
+	5.1) Player one choose to play again.
+	5.2) See use case "Player plays the game" step 2. Continue that use case.
 
-Player plays the game
-1) See use case:"Choosing one player mode" or "Choosing two player mode"
-2) Player(s) starts out towards the bottom of the maze map.
+One player plays the game
+1) See use case:"Choosing one player mode".
+2) Player starts out towards the bottom of the maze map.
 3) Ghosts are in a box in the middle of the map. One ghost starts outside the box.
-4) Player(s) move up,down,left, or right.
-5) Player collects pellet.
+4) Player move up, down, left, or right.
+5) Player moves on a space with a pellet.
+	5.1a) Player moves on a space with a ghost.
+	5.2a) See use case "One player lose". Continue that use case.
+	5.1b) Player moves on a space that contains a special pellet.
+	5.2b) See use case "Player eats a ghost". Use use cases 2-4.
+	5.1c) Player moves on an empty space.
 6) A predetermined amount of points are added to players score.
+
+Player dies use case(because player can die by standing still and ghost catching them. its weird but its a possibility and need to account for it) ?? Plus we need to know how that process works like what screen appears how to get to main menu etc. We need one for one player and two player.
