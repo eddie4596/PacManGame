@@ -60,12 +60,18 @@ One player plays the game
 2) Player starts out towards the bottom of the maze map.
 3) Ghosts are in a box in the middle of the map. One ghost starts outside the box.
 4) Player move up, down, left, or right.
-5) Player moves on a space with a pellet.
+5) Player moves on a space with an empty space.
 	5.1a) Player moves on a space with a ghost.
 	5.2a) See use case "One player lose". Continue that use case.
 	5.1b) Player moves on a space that contains a special pellet.
 	5.2b) See use case "Player eats a ghost". Use use cases 2-4.
-	5.1c) Player moves on an empty space.
-6) A predetermined amount of points are added to players score.
+	5.1c) Player moves on a space with a pellet.
+	5.2c) A predetermined amount of points are added to players score.
+6) Game resumes as normal.
+
+Two players play the game
+1) See use case:"Choosing two player mode".
+2) Player starts 
 
 Player dies use case(because player can die by standing still and ghost catching them. its weird but its a possibility and need to account for it) ?? Plus we need to know how that process works like what screen appears how to get to main menu etc. We need one for one player and two player.
+
